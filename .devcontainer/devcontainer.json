@@ -1,0 +1,56 @@
+{
+	"name": "Java & SpringBoot",
+	"build": {
+		"dockerfile": "../Base.Dockerfile",
+		"context": ".."
+	},
+	"postCreateCommand": "bash .devcontainer/provision.sh",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"vscjava.vscode-java-debug",
+				"vscjava.vscode-java-test",
+				"vscjava.vscode-java-dependency",
+				"vscjava.vscode-maven",
+				"redhat.java",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"ms-azuretools.vscode-docker",
+				"EditorConfig.EditorConfig",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"s-nlf-fh.glassit",
+				"fathulfahmy.lunarkeymap",
+				"JuniorSchmidt.lunar-vscode-theme",
+				"vscodevim.vim",
+				"tomoki1207.pdf",
+				"VSpaceCode.whichkey",
+				"redhat.vscode-xml"
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+						"path": "/bin/bash"
+					},
+					"zsh": {
+						"path": "/bin/zsh"
+					}
+				}
+			}
+		}
+	},
+	"runArgs": [
+		"--privileged",
+		"--network",
+		"host"
+	],
+	"mounts": [
+		// {
+		// 	"type": "bind",
+		// 	"source": "/tmp/.X11-unix/",
+		// 	"target": "/tmp/.X11-unix/"
+		// }
+	]
+}
