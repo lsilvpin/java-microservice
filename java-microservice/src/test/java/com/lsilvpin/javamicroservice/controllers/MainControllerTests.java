@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MainControllerTests {
 
     @Test
-    public void TestShouldReturnJsonObjectWithCode200() {
+    public void testShouldReturnJsonObjectWithCode200() {
         // Arrange
         MainController mainController = new MainController();
 
