@@ -16,6 +16,8 @@
 				"redhat.java",
 				"VisualStudioExptTeam.vscodeintellicode",
 				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"vscjava.vscode-spring-initializr",
+				"redhat.fabric8-analytics",
 				"ms-azuretools.vscode-docker",
 				"EditorConfig.EditorConfig",
 				"GitHub.copilot",
