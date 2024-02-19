@@ -1,0 +1,4 @@
+{
+    "environment": "prd",
+    "log_level": "info"
+}
